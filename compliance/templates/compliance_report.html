@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compliance Report</title>
+</head>
+<body>
+    <h1>Compliance Report</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Section</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Expected Value</th>
+                <th>Actual Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for section_title, section_data in compliance_report.items %}
+            <tr>
+                <td>{{ section_title }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
